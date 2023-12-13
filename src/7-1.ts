@@ -97,7 +97,6 @@ const sortedHands = RAW_DATA.sort((data1, data2) => {
     return 0; // All cards are the same and in the same order. These two hands are equal in rank.
   }
 });
-// console.log(sortedHands);
 
 let winnings = 0;
 for (var i = 0; i < sortedHands.length; i++) {

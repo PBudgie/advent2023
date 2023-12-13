@@ -61,7 +61,6 @@ const getHand = (cards: string): Hand => {
   );
   // Add the number of Js to the highest number of same cards
   distributionValues[0] = distributionValues[0] + numOfJs;
-  // console.log(`For ${cards}, distribution value is ${distributionValues}`);
 
   if (distributionValues.includes(5)) {
     return 'FIVE_OF_A_KIND';
@@ -113,7 +112,6 @@ const sortedHands = RAW_DATA.sort((data1, data2) => {
     return 0; // All cards are the same and in the same order. These two hands are equal in rank.
   }
 });
-console.log(sortedHands.join('\n'));
 
 let winnings = 0;
 for (var i = 0; i < sortedHands.length; i++) {
